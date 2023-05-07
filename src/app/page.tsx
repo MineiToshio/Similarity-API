@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import LargeHeading from "@/components/ui/LargeHeading";
 import Paragraph from "@/components/ui/Paragraph";
