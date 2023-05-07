@@ -5,7 +5,10 @@ import Providers from "@/components/ui/Providers";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/Toast";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export default function RootLayout({
   children,
@@ -15,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("bg-white text-slate-900 antialiased", inter.className)}
+      className={cn("bg-white text-slate-900 antialiased", inter.variable)}
     >
       <body className="min-h-screen bg-slate-50 dark:bg-slate-900 antialiased">
         <Providers>
