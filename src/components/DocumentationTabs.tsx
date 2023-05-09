@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/Tabs";
 import SimpleBar from "simplebar-react";
@@ -12,12 +14,15 @@ const DocumentationTabs: FC = () => {
         <TabsTrigger value="python">Python</TabsTrigger>
       </TabsList>
       <TabsContent value="nodejs">
-        {/* <SimpleBar></SimpleBar> */}
-        <Code animated language="javascript" code={nodejs} show />
+        <SimpleBar>
+          <Code animated language="javascript" code={nodejs} show />
+        </SimpleBar>
       </TabsContent>
       <TabsContent value="python">
-        {/* Set language as javascript as python is not in the default bundle */}
-        <Code animated language="javascript" code={python} show />
+        <SimpleBar>
+          {/* Set language as javascript as python is not in the default bundle */}
+          <Code animated language="javascript" code={python} show />
+        </SimpleBar>
       </TabsContent>
     </Tabs>
   );
