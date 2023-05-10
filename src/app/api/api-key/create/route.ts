@@ -8,7 +8,7 @@ import { z } from "zod";
 const handler = async () => {
   try {
     const user = await getServerSession(authOptions).then((res) => res?.user);
-    console.log(user);
+
     if (!user) {
       return NextResponse.json(
         {
