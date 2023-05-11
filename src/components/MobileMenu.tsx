@@ -1,9 +1,5 @@
 "use client";
 
-import { Info, LayoutDashboard, Loader2, User } from "lucide-react";
-import { signOut, useSession } from "next-auth/react";
-import Link from "next/link";
-import { useState } from "react";
 import Button from "@/ui/Button";
 import {
   DropdownMenu,
@@ -14,6 +10,10 @@ import {
   DropdownMenuTrigger,
 } from "@/ui/DropdownMenu";
 import { toast } from "@/ui/Toast";
+import { Info, LayoutDashboard, Loader2, User } from "lucide-react";
+import { signOut, useSession } from "next-auth/react";
+import Link from "next/link";
+import { useState } from "react";
 
 const MobileMenu = () => {
   const { data: session } = useSession();

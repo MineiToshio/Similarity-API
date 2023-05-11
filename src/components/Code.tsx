@@ -1,8 +1,8 @@
 "use client";
 
-import { FC, useEffect, useState } from "react";
-import { Highlight, themes, Prism } from "prism-react-renderer";
 import { useTheme } from "next-themes";
+import { Highlight, Prism, themes } from "prism-react-renderer";
+import { FC, useEffect, useState } from "react";
 
 (typeof global !== "undefined" ? global : window).Prism = Prism;
 

@@ -1,14 +1,14 @@
 "use client";
 
-import { useTheme } from "next-themes";
-import { FC } from "react";
+import Button from "@/components/ui/Button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/DropdownMenu";
-import Button from "@/components/ui/Button";
+import { useTheme } from "next-themes";
+import { FC } from "react";
 import Icons from "./Icons";
 
 interface ThemeToggleProps {}

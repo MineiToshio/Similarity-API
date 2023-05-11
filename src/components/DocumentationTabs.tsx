@@ -1,10 +1,10 @@
 "use client";
 
-import { FC } from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/Tabs";
-import SimpleBar from "simplebar-react";
 import Code from "@/components/Code";
 import { nodejs, python } from "@/helpers/documentation-code";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/Tabs";
+import { FC } from "react";
+import SimpleBar from "simplebar-react";
 
 const DocumentationTabs: FC = () => {
   return (

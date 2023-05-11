@@ -1,8 +1,8 @@
 "use client";
 
-import { FC, ReactNode } from "react";
-import { ThemeProvider } from "next-themes";
 import { SessionProvider } from "next-auth/react";
+import { ThemeProvider } from "next-themes";
+import { FC, ReactNode } from "react";
 
 interface ProvidersProps {
   children: ReactNode;

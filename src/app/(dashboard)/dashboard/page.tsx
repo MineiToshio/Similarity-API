@@ -1,10 +1,10 @@
 import ApiDashboard from "@/components/ApiDashboard";
 import RequestApiKey from "@/components/RequestApiKey";
+import { authOptions } from "@/lib/auth";
+import { db } from "@/lib/db";
 import type { Metadata } from "next";
 import { getServerSession } from "next-auth";
 import { notFound } from "next/navigation";
-import { authOptions } from "@/lib/auth";
-import { db } from "@/lib/db";
 
 export const metadata: Metadata = {
   title: "Similarity API | Dashboard",

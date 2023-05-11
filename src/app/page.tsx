@@ -1,8 +1,8 @@
-import { Metadata } from "next";
 import LargeHeading from "@/components/ui/LargeHeading";
 import Paragraph from "@/components/ui/Paragraph";
-import Link from "next/link";
+import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Similarity API | Home",

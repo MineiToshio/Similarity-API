@@ -1,9 +1,9 @@
 "use client";
 
-import { FC, useState } from "react";
+import { toast } from "@/components/ui/Toast";
 import Button from "@/ui/Button";
 import { signIn } from "next-auth/react";
-import { toast } from "@/components/ui/Toast";
+import { FC, useState } from "react";
 
 interface SignInButtonProps {}
 

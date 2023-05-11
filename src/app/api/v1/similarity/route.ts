@@ -1,9 +1,9 @@
-import { NextRequest, NextResponse } from "next/server";
-import { headers } from "next/headers";
-import { z } from "zod";
+import { cosineSimilarity } from "@/helpers/cosineSimilarity";
 import { db } from "@/lib/db";
 import { openai } from "@/lib/openai";
-import { cosineSimilarity } from "@/helpers/cosineSimilarity";
+import { headers } from "next/headers";
+import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
 
 const reqSchema = z.object({
   text1: z.string().max(1000),

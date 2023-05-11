@@ -1,14 +1,14 @@
 "use client";
 
-import { FC, FormEvent, useState } from "react";
-import { toast } from "@/ui/Toast";
+import CopyButton from "@/components/CopyButton";
 import { createApiKey } from "@/helpers/create-api-key";
-import { Key } from "lucide-react";
+import Button from "@/ui/Button";
+import { Input } from "@/ui/Input";
 import LargeHeading from "@/ui/LargeHeading";
 import Paragraph from "@/ui/Paragraph";
-import { Input } from "@/ui/Input";
-import CopyButton from "@/components/CopyButton";
-import Button from "@/ui/Button";
+import { toast } from "@/ui/Toast";
+import { Key } from "lucide-react";
+import { FC, FormEvent, useState } from "react";
 
 const RequestApiKey: FC = () => {
   const [isCreating, setIsCreating] = useState<boolean>(false);

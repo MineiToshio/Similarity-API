@@ -1,8 +1,5 @@
 "use client";
 
-import { Loader2 } from "lucide-react";
-import { useRouter } from "next/navigation";
-import { FC, useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,6 +11,9 @@ import { createApiKey } from "@/helpers/create-api-key";
 import { revokeApiKey } from "@/helpers/revoke-api-key";
 import Button from "@/ui/Button";
 import { toast } from "@/ui/Toast";
+import { Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { FC, useState } from "react";
 
 interface ApiKeyOptionsProps {
   apiKeyKey: string;
