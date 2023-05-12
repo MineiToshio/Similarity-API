@@ -16,6 +16,10 @@
   </a>
 </p>
 
+## 📹 Demo
+
+https://github.com/MineiToshio/Similarity-API/assets/38053554/4387c028-bcee-4bc2-b5b5-e86f96cc5d9b
+
 ## 🔥 Features
 
 - Google authentication with [Next Auth](https://next-auth.js.org/).
