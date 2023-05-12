@@ -1,34 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img alt="Logo" src="public/favicon.ico" width="40" />
+  <a href="https://similarityapi1.vercel.app">
+	<h1 align="center">Similarity API</h1>
+  </a>
+<p>
 
-## Getting Started
+<p align="center">
+  An API where you can easily determine the similarity between two pieces of text
+</p>
 
-First, run the development server:
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://similarityapi1.vercel.app" target="_blank">
+    <img alt="Website" src="https://img.shields.io/website?down_message=offline&label=site&up_message=online&url=http%3A%2F%2Fadarshaacharya.com.np" />
+  </a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## 🔥 Features
+
+- Google authentication with [Next Auth](https://next-auth.js.org/).
+- Complete API key system to create & revoke user keys.
+- Api calls rate limit with [Redis](https://redis.io/).
+- Protection of sensitive routes
+- Light and dark themes.
+
+Dev features:
+
+- Build with [React](https://react.dev/) and [Next.js](https://nextjs.org/).
+- [Typescript](https://www.typescriptlang.org/) enabled.
+- [Tailwind CSS](https://tailwindcss.com/) enabled.
+- Data model schema with [Prisma](https://www.prisma.io/).
+- Ready to deploy in [Vercel](https://vercel.com/).
+
+## 🛠 Installation & Set Up
+
+1. Install dependencies:
+
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Set up env variables.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+# .env
+NEXTAUTH_SECRET=**************
+NEXTAUTH_URL=**************
+GOOGLE_CLIENT_ID=**************
+GOOGLE_CLIENT_SECRET=**************
+DATABASE_URL=**************
+OPENAI_API_KEY=**************
+REDIS_URL=**************
+REDIS_SECRET=**************
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Start dev server:
 
-## Learn More
+```sh
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 👤 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project was developed by Sergio Toshio Minei. You can find me here:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Website: https://toshiominei.com
+- Facebook: [@MineiToshio](https://facebook.com/MineiToshio)
+- Instagram: [@MineiToshio](https://instagram.com/MineiToshio)
+- Twitter: [@MineiToshio](https://twitter.com/MineiToshio)
+- Github: [@MineiToshio](https://github.com/MineiToshio)
+- LinkedIn: [@MineiToshio](https://linkedin.com/in/MineiToshio)
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+All contributions are welcome. If you see a bug or want to implement a new feature, feel free to make a PR.
