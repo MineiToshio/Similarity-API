@@ -5,7 +5,7 @@ import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
-const handler = async () => {
+export const GET = async () => {
   try {
     const user = await getServerSession(authOptions).then((res) => res?.user);
 
@@ -55,5 +55,3 @@ const handler = async () => {
     );
   }
 };
-
-export { handler as GET };
